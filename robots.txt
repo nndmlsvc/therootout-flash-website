@@ -1,0 +1,11 @@
+User-agent: *
+
+Disallow: /errorpages/
+
+Disallow: /system/
+
+Disallow: /works/
+
+Disallow: /temp/
+
+Disallow: /blog-test/

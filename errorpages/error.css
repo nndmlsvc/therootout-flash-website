@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0px; padding:0px;
+	background-color:#1d1d1d;
+	background-image: url(http://www.therootout.com/errorpages/error-pattern.png);
+	background-repeat: repeat;
+}
+
+#bglayer {
+
+  	position:relative;
+	height: 80px;
+	background-image: url(http://www.therootout.com/errorpages/error-up.jpg);
+	background-repeat: repeat-x;
+}
+
+#logo{
+	width: 173px;
+	height: 91px;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url(http://www.therootout.com/errorpages/error-logo.png);
+}
+
+#countdown{
+	width: 50px;
+	height: 42px;
+	position:absolute;
+	top: 17px;
+	left: 170px;
+	background-image: url(http://www.therootout.com/errorpages/error-countdown.gif);
+}
+
+
+#title{
+	width: 500px;
+	height: 20px;
+	position:absolute;
+	top: 20px;
+	left: 230px;
+
+}
+
+h1{
+	color: #dadada;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight: bold;
+	text-shadow:1px 1px #000000;
+	margin: 0;
+	padding: 0;
+}
+h2{
+	color: #dadada;
+	font-family:Verdana, Arial, sans-serif;
+	font-size:10px;
+	font-weight: bold;
+	text-shadow:1px 1px #000000;
+	margin: 0;
+	padding: 0;
+}
+
