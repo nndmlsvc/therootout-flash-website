@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<vesti>
+
+	<slajd 
+		naslov="Lorem ipsum dolor sit amet" 
+		opis="Suspendisse eget est massa, non elementum nulla. Nullam vitae quam tempor diam suscipit tempus. " 
+		fotka="photo1.jpg" 
+		link="http://www.therootout.com"
+		brzina="3"/>
+	<slajd 
+		naslov="Maecenas vehicula" 
+		opis="Vestibulum ac massa quis lorem rutrum molestie. " 
+		fotka="photo2.jpg" 
+		link="http://www.therootout.com"
+		brzina="1"/>
+	<slajd 
+		naslov="Suspendisse eget est " 
+		opis="Nullam faucibus quam id mi sodales porttitor." 
+		fotka="photo3.jpg" 
+		link="http://www.therootout.com"
+		brzina="8"/>
+	<slajd 
+		naslov="Lorem ipsum dolor sit amet" 
+		opis="Suspendisse eget est massa, non elementum nulla. Nullam vitae quam tempor diam suscipit tempus. " 
+		fotka="photo4.jpg" 
+		link="http://www.therootout.com"
+		brzina="6"/>
+
+	<slajd 
+		naslov="Maecenas vehicula" 
+		opis="Vestibulum ac massa quis lorem rutrum molestie. " 
+		fotka="photo5.jpg" 
+		link="http://www.therootout.com"
+		brzina="5"/>
+	<slajd 
+		naslov="Suspendisse eget" 
+		opis="Nullam faucibus quam id mi sodales porttitor." 
+		fotka="photo6.jpg" 
+		link="http://www.therootout.com"
+		brzina="1"/>
+	<slajd 
+		naslov="Lorem ipsum dolor sit amet" 
+		opis="Nam mollis nunc quis neque suscipit consectetur. " 
+		fotka="photo7.jpg" 
+		link="http://www.therootout.com"
+		brzina="5"/>
+	<slajd 
+		naslov="Maecenas vehicula" 
+		opis="Suspendisse eget est massa, non elementum nulla. Nullam vitae quam tempor diam suscipit tempus. " 
+		fotka="photo8.jpg" 
+		link="http://www.therootout.com"
+		brzina="5"/>
+
+
+</vesti>
