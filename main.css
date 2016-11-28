@@ -1,25 +1,183 @@
-@charset "utf-8";
-/* CSS Document */
-
-html, body, #content{
-	height:100%; 
+html,
+body,
+#content {
+    height: 100%;
 }
 
-body{
-	margin:0; 
-	padding:0; 
-	overflow:hidden;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
 }
 
-#content{
-	z-index:11;
+#content {
+    z-index: 11;
 }
 
+#thumbnail {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    visibility: hidden;
+}
 
-#thumbnail{
-	position:absolute;
-	left:0px;
-	top:0px;
-	z-index:10;
-	visibility:hidden;
+#modal-dialog,
+#modal-dialog-bg {
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 7px 7px -4px rgba(33, 33, 33, 0.3);
+    -moz-box-shadow: 0 7px 7px -4px rgba(33, 33, 33, 0.3);
+    box-shadow: 0 7px 7px -4px rgba(33, 33, 33, 0.3);
+    padding: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+#modal-dialog-bg {
+    background: rgba(0, 0, 0, 0.65);
+    width: auto;
+    height: auto;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+h1 {
+    color: #333333;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 2.5em;
+}
+
+p {
+    color: #222222;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+a {
+    text-decoration: none;
+    color: #00a9ff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button-old,
+.button-new {
+    padding: 10px 20px;
+    background: #00a9ff;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    -webkit-box-shadow: 0 7px 7px -4px rgba(13, 119, 173, 0.3);
+    -moz-box-shadow: 0 7px 7px -4px rgba(13, 119, 173, 0.3);
+    box-shadow: 0 7px 7px -4px rgba(13, 119, 173, 0.3);
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.button-old {
+    background: #555;
+    float: left;
+    -webkit-box-shadow: 0 7px 7px -4px rgba(33, 33, 33, 0.3);
+    -moz-box-shadow: 0 7px 7px -4px rgba(33, 33, 33, 0.3);
+    box-shadow: 0 7px 7px -4px rgba(33, 33, 33, 0.3);
+}
+
+.button-old:hover,
+.button-new:hover {
+    text-decoration: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all 0.05s ease-in-out;
+    -moz-transition: all 0.05s ease-in-out;
+    -o-transition: all 0.05s ease-in-out;
+    transition: all 0.05s ease-in-out;
+}
+
+.button-new:hover {
+    background: #05c2ff;
+    -webkit-box-shadow: 0 7px 17px -4px rgba(13, 119, 173, 0.5);
+    -moz-box-shadow: 0 7px 17px -4px rgba(13, 119, 173, 0.5);
+    box-shadow: 0 7px 17px -4px rgba(13, 119, 173, 0.5);
+}
+
+.button-old:hover {
+    background: #666;
+    -webkit-box-shadow: 0 7px 17px -4px rgba(33, 33, 33, 0.5);
+    -moz-box-shadow: 0 7px 17px -4px rgba(33, 33, 33, 0.5);
+    box-shadow: 0 7px 17px -4px rgba(33, 33, 33, 0.5);
+}
+
+.no-flash,
+.no-flash-mobile {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    padding: 60px;
+}
+.no-flash-mobile {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .no-flash {
+        display: none;
+    }
+    #modal-dialog,
+    .no-flash-mobile {
+        display: block;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        width: auto;
+        height: auto;
+    }
+    #modal-dialog .button-new,
+    #modal-dialog .button-old,
+    .no-flash-mobile .button-new,
+    .no-flash-mobile .button-old {
+        float: none;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #modal-dialog,
+    .no-flash {
+        padding: 30px;
+    }
 }
